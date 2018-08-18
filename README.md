@@ -6,10 +6,16 @@ The purpose of this application is to return the top 3 recommended jobs for a wo
 ## Setup
 
 Requirements are having Java and Maven installed.
-Run a maven clean install command to download all the dependencies and generate a jar.
-Run java -jar target/swipejobs-0.0.1-SNAPSHOT.jar to run the application
+Run the below command to download all the dependencies and generate a jar:
+```
+maven clean install
+```
+And run this command to start the application:
+```
+java -jar target/swipejobs-0.0.1-SNAPSHOT.jar
+```
 
-The application will provide a REST API GET http://localhost:8080/worker/{workerId} that given a worker id and will return 3 recommended jobs for this worker.
+The application provides a REST API GET http://localhost:8080/worker/{workerId} that given a worker id, will return 3 recommended jobs for this worker.
 
 
 ## Explanation of the code
